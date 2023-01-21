@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+
+  /* ハンバーガーメニュー */
+  .btn_nav{
+    position: relative;
+    background:#4b4be6;
+    width: 70px;
+    height:65px;
+    border-radius: 5px;
+    margin: 2px;
+  }
+  .btn_nav span{
+    width: 65%;
+      display: inline-block;
+      border-radius: 2px;
+      background: rgb(255, 255, 255);
+      position: absolute;
+      left: 14px;
+      height: 3px;
+      transition: all .4s;
+    }
+    .btn_nav span:nth-of-type(1) {
+        top:15px; 
+      }
+      .btn_nav span:nth-of-type(2) {
+        top:32px;
+      }
+      .btn_nav span:nth-of-type(3) {
+        top:50px;
+      }
+      .btn_nav.active span:nth-of-type(1) {
+          top: 25px;
+          left: 18px;
+          transform: translateY(6px) rotate(-45deg);
+          width: 50%;
+      }
+      .btn_nav.active span:nth-of-type(2) {
+        opacity: 0;
+      }
+      .btn_nav.active span:nth-of-type(3){
+          top: 37px;
+          left: 18px;
+          transform: translateY(-6px) rotate(45deg);
+          width: 50%;
+      }
+  .header_menu ul {
+    background-color: rgba(160, 160, 160, 0.785);
+    width: 20%;
+    line-height: 100px;
+    position: absolute;
+    right: 0;
+    z-index: 5;
+  }
+  .header_menu a {
+    color: #ffffff;
+    font-size: 18px;
+  }
+  .header_menu a {
+    padding:3%;
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+  }
+
+  /* ハンバーガーメニュー終 */
+.header_inner {
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3%;
+    position: relative;
+    top: 0;
+    text-align: center;
+}
+.header_img img {
+    width: 100%;
+    height: 90px;
+}
+.header_search [name="search"]{
+    width: 1000px;
+    height: 50px;
+    border-radius: 10px;
+    border-color:black;
+}
+.header_search [name="submit"]{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: black;
+}
+.header_menu li:hover {
+    background-color: #62cafa;
+  }
+.company_inner {
+    background-color: rgba(0, 0, 0, 0.588);
+}
+.slider-for img {
+    width: 100%;
+    height: 70vh;
+}
+.link_box {
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 0px;
+}
+.mapbox_inner {
+    text-align: center;
+    width: 50%;
+}
+.mapbox_inner h3 {
+    color: black;
+    font-size: 30px;
+    font-family: "Hannari";
+    font-weight: 100;
+}
+.mapbox_inner img {
+    width: 90%;
+    height: 30vh;
+    object-fit: contain;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.news_inner {
+    padding: 3%;
+    text-align: center;
+}
+.news_sttl,.news_ttl h2,h3{
+    color: red;
+}
+.news_ttl h2 {
+    font-size: 50px;
+}
+.news_box a {
+    text-decoration: none;
+    color: black;
+}
+.news_box hr {
+    width: 40%;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+.news_flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 3%;
+}
+.news_flex dt:not(.decoration) {
+    background-color: rgb(76, 231, 228);
+}
+.news_flex dt {
+    border-radius: 20px;
+}
+.news_flex dt,dd {
+    padding: 0.5%;
+}
+.news_flex dd {
+    margin-left: 5%;
+}
+.footer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer2 i {
+    font-size: 90px;
+}
+.footer2-1,.footer2-2,.footer2-3,.footer2-4 {
+    margin: 3%;
+}
+.copyright_inner p {
+    text-align: center;
+    padding: 2%;
+}
+
+@media screen and (min-width: 429px) {
+    .header_searchsp {
+        display: none;
+    }
+}
+@media screen and (max-width: 428px) {
+    .header_menu ul {
+        background-color: rgba(160, 160, 160, 0.883);
+        width: 100%;
+        position: absolute;
+        right: 0;
+      }
+    .header_search {
+        display: none;
+    }
+    .header_searchsp [name="search"]{
+        width: 300px;
+        height: 50px;
+        border-radius: 10px;
+        border-color:black;
+    }
+    .header_searchsp [name="submit"]{
+        width: 70px;
+        height: 30px;
+        border-radius: 10px;
+        border-color: black;
+    }
+    .header_menu li:hover {
+        background-color: #62cafa;
+      }
+}
