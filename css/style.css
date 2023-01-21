@@ -186,8 +186,13 @@ li {
     padding: 2%;
 }
 
-@media screen and (min-width: 429px) {
+@media screen and (min-width: 769px) {
     .header_searchsp {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header_search {
         display: none;
     }
 }
@@ -197,9 +202,6 @@ li {
         width: 100%;
         position: absolute;
         right: 0;
-      }
-    .header_search {
-        display: none;
     }
     .header_searchsp [name="search"]{
         width: 300px;
